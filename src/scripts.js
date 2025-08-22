@@ -38,7 +38,7 @@ const addToHTML = () => {
         listProducts.forEach(product => {
             let newproduct = document.createElement('div');
             newproduct.classList.add('item')
-            newproduct.dataset.id = product.id // product er id set kora
+            newproduct.dataset.id = product.id 
             newproduct.innerHTML=`
                 <img src="${product.image}" alt="">
                 <h2 class="text-2xl font-bold text-[#333] text-center mt-2.5">${product.name}</h2>
@@ -188,7 +188,7 @@ const applyView = (mode) => {
 gridBtn.addEventListener('click', () => applyView('grid'));
 listBtn.addEventListener('click', () => applyView('list'));
 
-// run after DOM and product init
+
 const initView = () => {
   const saved = localStorage.getItem('productView') || 'grid';
   applyView(saved);
@@ -214,12 +214,12 @@ const init = () => {
 }
 init()
 
-// Query selectors for promo code elements
+
 let promoCodeInput = document.querySelector('#promoCodeInput');
 let applyPromoCodeBtn = document.querySelector('#applyPromoCode');
-let totalPriceElement = document.querySelector('#cartTotal'); // Renamed variable
+let totalPriceElement = document.querySelector('#cartTotal'); 
 
-// Function to calculate total price
+
 const calculateTotalPrice = () => {
     let totalPrice = 0;
 
@@ -232,26 +232,27 @@ const calculateTotalPrice = () => {
     return totalPrice;
 };
 
-// Function to apply promo code
+
 const applyPromoCode = () => {
-    const promoCode = promoCodeInput.value.trim(); // Get the entered promo code
-    const totalPrice = calculateTotalPrice(); // Calculate the total price of the cart
+    const promoCode = promoCodeInput.value.trim(); 
+    const totalPrice = calculateTotalPrice(); 
 
-    let discountedTotal = totalPrice; // Default to the original total price
+    let discountedTotal = totalPrice; 
 
-    // Apply discount based on promo code
+    
     if (promoCode === 'ostad10') {
-        discountedTotal = totalPrice * 0.9; // Apply 10% discount
+        discountedTotal = totalPrice * 0.9; 
     } else if (promoCode === 'ostad50') {
-        discountedTotal = totalPrice * 0.5; // Apply 50% discount
+        discountedTotal = totalPrice * 0.5; 
     } else {
-        alert('Invalid promo code!'); // Show an error for invalid promo codes
+        alert('Invalid promo code!'); 
         return;
     }
 
-    // Update the total price in the UI
+    
     totalPriceElement.textContent = '$' + discountedTotal.toFixed(2);
 };
 
-// Event listener for applying promo code
+
+
 applyPromoCodeBtn.addEventListener('click', applyPromoCode);
