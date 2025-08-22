@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="./output.css" rel="stylesheet">>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body class=""> 
+
+    <div id="container" class=" w-[900px] max-w-[90%] m-auto text-center pt-[10px] transition-transform duration-500" >
+        <header class=" fixed h-[80px] z-1000 w-[100%] top-0 left-0 right-0 flex justify-between items-center py-5 ">
+            <div id="title" class="text-3xl text-amber-50 underline underline-offset-4 p-4 flex-grow font-bold ">Product List</div>
+
+            <div class="flex gap-[8px] align-items-center" id="controls" >
+                    <button class="view-btn grid-btn " title="Grid view">Grid</button>
+                    <button class="view-btn list-btn " title="List view">List</button>
+            </div>
+
+                 <!-- here1 -->
+            <div class="icon-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <!-- Here 5 -->
+                <span class="flex bg-red-600 w-[20px] h-[20px] rounded-full text-white justify-center items-center absolute top-[50%] right-[-50%]">0</span>
+            </div>
+        </header>
+
+        <!-- Here 3 -->
+        <div class="list-product">
+              <div class="item">
+                  <img src="shirt.jpg" alt="Product Image " class="w-[90%] filter drop-shadow-[0px_0px_10px_rgba(0,0,0,0.2)]">
+                  <h2>Product 1</h2>
+                  <p class="text-red-600 text-sm leading-relaxed mt-2" id="description">This is a great product.</p>
+                  <div class="price">$200</div>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+        </div>
+    </div>
+
+    <div class="carttab">
+      <h1 class="font-light m-0 p-5 text-3xl">Shopping Cart</h1>
+      <!-- here 4 -->
+      <div class="listcart">
+      </div>
+
+      <div class="bg-blue-700 mb-4 p-2 grid grid-cols-[2fr_1fr] gap-2">
+        <input type="text" class="flex flex-grow rounded-3xl bg-amber-300  placeholder:text-white placeholder:justify-center" id="promoCodeInput" placeholder="Enter promo code" />
+        <button id="applyPromoCode" class="bg-blue-400 text-white rounded-3xl px-4">Apply</button>
+      </div>
+
+      <div class="cart-total">
+        <div class="total-label" style="font-size:16px ;">Total:</div>
+        <div class="total-amount" id="cartTotal" style="font-size:16px;">$0.00</div>
+      </div>
+      
+      <div class="btn">
+        <!-- here 2 -->
+        <button class="close">Close</button>
+        <button class="checkout">Check</button>
+
+      </div>
+    </div>
+
+
+
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>

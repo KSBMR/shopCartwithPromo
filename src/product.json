@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name": "Product 1",
+        "description": "This classic white T-shirt is made from 100% soft cotton.",
+        "price": 10.99,
+        "image": "shirt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Product 2",
+        "description": "This stylish blue shirt is made from a lightweight fabric.",
+        "price": 12.99,
+        "image": "shirt2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Product 3",
+        "description": "This stylish blue shirt is made from a lightweight fabric.",
+        "price": 8.99,
+        "image": "shirt3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Product 4",
+        "description": "A versatile black shirt that can be dressed up or down.",
+        "price": 15.99,
+        "image": "shirt4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Product 5",
+        "description": "A stylish green shirt that adds a pop of color.",
+        "price": 18.99,
+        "image": "shirt2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Product 6",
+        "description": "A stylish green shirt that adds a pop of color.",
+        "price": 18.99,
+        "image": "shirt3.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Product 7",
+        "description": "A stylish green shirt that adds a pop of color.",
+        "price": 18.99,
+        "image": "shirt2.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Product 8",
+        "description": "A stylish green shirt that adds a pop of color.",
+        "price": 18.99,
+        "image": "shirt4.jpg"
+    }
+    
+]
